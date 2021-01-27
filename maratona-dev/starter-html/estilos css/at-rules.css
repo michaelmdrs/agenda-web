@@ -1,0 +1,21 @@
+/* Alguns exemplos de At-rules CSSv */
+
+@import url("https://local.com/styles.css");
+
+@media (min-width: 470px) {
+    /* Rules here 
+       Resposive
+    */
+}
+
+@font-face {
+    /* Rules here 
+       fonts
+    */
+}
+
+@keyframes {
+    /* Rules here 
+       Animations
+    */
+}
