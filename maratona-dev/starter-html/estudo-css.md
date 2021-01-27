@@ -117,7 +117,22 @@ font: italic bold .8em/1.2 Ubuntu, sans-serif;
 - Valores não especificados irão assumir o valor padrão
 - Geralmente, a ordem descrita não importa, mas, se houver muitas propriedades com valores semelhantes, podermos encontrar problemas.
 
+### Funções :man_technologist:
 
+- Nome seguido de abre e fecha parentesis
+- Recebe argumentos
+
+#### Exemplo
+
+@import url("https://urlaqui.com/style.css");
+
+{
+
+​	color: rgb(255, 0, 100);
+
+​	width: calc(100% - 10px);
+
+}
 
 
 
