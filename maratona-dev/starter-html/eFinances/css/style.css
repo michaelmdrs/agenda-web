@@ -31,7 +31,7 @@ body {
     width: min(90vw, 800px);
 }
 
-/* Titles */
+/* Titles ======== */
 h2 {
     color: var(--dark-blue);
     font-weight: normal;
@@ -39,7 +39,18 @@ h2 {
     margin-bottom: .8rem;
 }
 
-/* Header */
+/* Links and Buttons ======== */
+
+a {
+    color: #49aa26;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+/* Header ======== */
 header {
     background: #2d4a22;
     padding: 2rem 0 10rem;
@@ -51,7 +62,7 @@ header {
     font-weight: 100;
 }
 
-/* Balance */
+/* Balance ======== */
 #balance {
     margin-top: -8rem;
 }
@@ -61,7 +72,7 @@ header {
     margin-top: 0;
 }
 
-/* Cards */
+/* Cards ======== */
 .card {
     background: #fff;
     border-radius: .25rem;
@@ -90,7 +101,7 @@ header {
     background: #49aa26;
 }
 
-/* Table */
+/* Table ======== */
 #data-table {
     border-spacing: 0 0.5rem;
     color: #969cb3;
@@ -136,7 +147,7 @@ td.expense {
     color: #e92929;
 }
 
-/* Footer */
+/* Footer ======== */
 footer {
     color: var(--dark-blue);
     opacity: .6;
