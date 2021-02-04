@@ -110,15 +110,15 @@ header {
 }
 
 /* Table ======== */
-table {
-    border-spacing: 0 0.5rem;
+#transaction {
     display: block;
+    overflow-x: auto;
     width: 100%;
 }
 
 #data-table {
+    border-spacing: 0 0.5rem;
     color: #969cb3;
-    overflow-x: auto;
     width: 100%;
 }
 
@@ -167,6 +167,20 @@ td.income {
 td.expense {
     color: #e92929;
 }
+
+/* Modal ======== */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal {
+    background: #f0f2f5;
+}
+
 
 /* Footer ======== */
 footer {
