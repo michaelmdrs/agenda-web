@@ -1,6 +1,9 @@
 /* Global */
 :root {
     --dark-blue: #363f5f;
+    --green: #49aa26;
+    --light-green: #3dd705;
+    --red: #e92929;
 }
 * {
     box-sizing: border-box;
@@ -45,17 +48,47 @@ h2 {
 /* Links and Buttons ======== */
 
 a {
-    color: #49aa26;
+    color: var(--green);
     text-decoration: none;
 }
 
 a:hover {
-    color: #3dd705;
+    color: var(--light-green);
+}
+
+button {
+    background: var(--green);
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    padding: 0;
+    width: 100%;
+}
+
+button:hover {
+    background: var(--light-green);
 }
 
 .button.new {
     display: inline-block;
     margin-bottom: .8rem;
+}
+
+.button.cancel {
+    align-items: center;
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
 }
 
 /* Header ======== */
@@ -106,7 +139,7 @@ header {
 
 .card.total {
     color: #fff;
-    background: #49aa26;
+    background: var(--green);
 }
 
 /* Table ======== */
@@ -191,6 +224,43 @@ td.expense {
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+/* Form ======== */
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+input {
+    border: none;
+    border-radius: 0.2rem;
+
+    padding: 0.8rem;
+
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group.actions .button, 
+.input-group.actions button {
+    width: 48%;
 }
 
 /* Footer ======== */

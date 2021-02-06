@@ -45,7 +45,7 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a href="#" class="button new">+ Nova Transação</a>
+            <a href="#" class="button new" onclick="">+ Nova Transação</a>
             
             <table id="data-table">
                 <thead>
@@ -94,21 +94,35 @@
                 <h2>Nova Transação</h2>
                 <form action="">
                     <div class="input-group">
-                        <label class="sr-only" for="description"></label>
+                        <label class="sr-only" for="description">Descrição</label>
                         <input type="text" id="description" name="description" placeholder="Descrição">
                     </div>
 
                     <div class="input-group">
-                        <label class="sr-only" for="amount"></label>
-                        <input type="number" id="amount" name="amount" placeholder="valor">
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00">
+                        
+                        <small class="help">Use o sinal - (negativo) para despesas e , (virgula) para casas decimais</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" class="button cancel">Cancelar</a>
+                        <button>Salvar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <footer>
-        <p>dev.finance$</p>
-    </footer>
+    <footer><p>dev.finance$</p></footer>
+    
+    <script>
+
+    </script>
 </body>
 </html>
