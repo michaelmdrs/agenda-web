@@ -97,3 +97,19 @@ Usando expressões regulares para pesquisar históricos de commits ex:
 git log --grep='Function'
 ```
 
+
+
+### Git add
+
+Para adicionar arquivos em nossos repositórios remotos usamos:
+
+- git add 'nome do arquivo' // Adiciona um arquivo específico
+- git add . ou * // Adiciona todos os arquivos que foram alterados
+- git add *.html // Adiciona todos os arquivos com extensão HTML
+
+### Git diff
+
+O comando diff nos permite visualizar as modificações em nossos arquivos ao longo do projeto.
+
+- git diff
+
