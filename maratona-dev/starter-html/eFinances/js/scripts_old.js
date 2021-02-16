@@ -17,10 +17,10 @@ const Storage = {
     get() {
         return JSON.parse(localStorage.getItem('dev.finances:transactions')) || []
     },
-    
+
     set(transactions) {
         localStorage.setItem('dev.finances:transactions', JSON.stringify(transactions))
-    } // Tinha esquecido de inserir o .setItem
+    }
 }
 
 const Transaction = {
@@ -64,7 +64,6 @@ const Transaction = {
         return Transaction.incomes() + Transaction.expenses()
     }
 }
-
 // Pegas as transações no objeto aqui no JS e colocar no HTML
 const DOM = {
     transactionsContainer: document.querySelector('#data-table tbody'),
@@ -182,7 +181,7 @@ const Form = {
     clearFields() {
         Form.description.value = ''
         Form.amount.value = ''
-        Form.date.value = ''
+        Form.date.value = '' // atenção nos detalhes aqui tinha faltando o . (e estava causando o erro)
     },
 
     submit(event) {
