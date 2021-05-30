@@ -1,0 +1,199 @@
+/*
+*
+* @author Michael Santos
+* @version 0.1
+*/
+/* Reset CSS - Simplificado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============ Barra de navegação ============ */
+body, 
+.capa {
+    height: 100vh;
+}
+body {
+    background: url('../img/capa.png'), 
+                url('../img/ruido.png'),
+                linear-gradient(45deg, rgb(242, 5, 104), #5207F2);
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+/* -- Barra de navegação --*/
+
+.img-logo {
+    background-image: url('../img/spotify.svg');
+    background-size: contain;
+    color: transparent;
+    display: block;
+    height: 40px;
+    width: 132px;
+}
+
+nav.navbar-transparente {
+    background: rgba(0, 0, 0, 0.57);
+    padding: 15px 0px;
+}
+
+.divisor {
+    background-color: whitesmoke;
+    margin: 13px 10px;
+    height: 16px;
+    width: 1px;
+}
+
+/* Formatação Links */
+
+li.nav-link a,
+footer .navMenu a {
+    color: whitesmoke; 
+}
+
+li.nav-link a:hover,
+footer .navMenu a:hover {
+    color: #9BF0E1;
+    text-decoration: none;
+}
+
+/* -- Imagem de capa -- */
+.capa {
+    display: table;
+    width: 100vw;
+}
+
+.textCapa {
+    color: whitesmoke;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* -- Botões capa */
+.btn-custom {
+    color: whitesmoke;
+    border-radius: 500px;
+    margin: 0px 15px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+    background: #F25C05;
+    color: #FFF;
+}
+
+.btn-roxo:hover {
+    background: #230A59;
+    color: #FFF;
+}
+
+.btn-branco {
+    border: 2.5px solid #FFF;
+    color: #FFF;
+}
+
+.btn-branco:hover {
+    background: #FFF;
+    color: #230A59;
+}
+
+/* -- Seção Serviços -- */
+#servicos {
+    background: #FFF;
+    padding: 20px 0px;
+}
+
+.albuns {
+    padding: 10px 0px 10px 0px;
+}
+
+/* Efeitos de animação nas imagens */
+.img-albun {
+    transition: 500ms;
+    width: 100vw;
+}
+
+.img-albun:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* -- Seção Informações */
+#recursos {
+    color: #FFF;
+    padding: 20px 0px;
+}
+
+.rotacionar {
+    -ms-transform: rotate(30deg); /* IE9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari e Opera*/
+    padding-left: 100px;
+    transform: rotate(35deg);
+}
+
+/* -- Rodape -- */
+footer {
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.navMenu a {
+    color: #FFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navMenu {
+    list-style: none;
+}
+
+.redesSociais {
+    float: right;
+    margin-left: 24px;
+}
+
+
+/* ============ Tipografia ============ */
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    padding: 5px 0px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    padding: 5px 0px;
+}
+
+#rodape h4 {
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#servicos h3 {
+    color: #5207F2;
+}
+
+#recursos h3 {
+    color: #21038C;
+    text-decoration: underline;
+}

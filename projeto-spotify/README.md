@@ -1,0 +1,2 @@
+# Projeto Spotify Clone
+  - Replicar o site do Spotify usando HTML5, CSS3 e Bootstrap. Os conceitos foram pensados para que o site possa ser acessado de qualquer dispositivo, um das vantagens de usar o HTML5, CSS3 aliado com o Bootstrap é que podemos entragar um projeto simples e eficiente atendendo bem as exigências da web atual.
