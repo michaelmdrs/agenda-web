@@ -20,9 +20,11 @@ Exemplos de rotas
     path('multiplicacao/<int:num1>/<int:num2>', views.multiplicacao),
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from core import views
+#from core.models import Evento
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('agenda/', views.lista_eventos)
 ]

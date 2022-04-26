@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from core.models import Evento
 
 # Create your views here.
 
@@ -23,6 +24,10 @@ def multiplicacao(request, num1, num2):
     return HttpResponse(f'A multiplicação entre {num1} * {num2} = {resultado}')
     
 """
-
-
-
+def lista_eventos(request):
+    #evento = Evento.objects.get(id=1)
+    usuario = request.user
+    evento = Evento.objects.all()
+    #evento = Evento.objects.filter(usuario=usuario)
+    data = {'eventos': evento}
+    return render(request, 'agenda.html', data)
